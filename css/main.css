@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+/* Button */
+.bg-primary {
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 20px; /* Adjusted padding for mobile */
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* Text color */
+.text-primary {
+    color: var(--pink)!important;
+}
+
+/* Navbar */
+.navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--pink)!important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+#header {
+    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 40px; /* Adjusted font size for mobile */
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff!important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink)!important;
+}
+
+/* Title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 40px; /* Adjusted height for mobile */
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Collection */
+.active-filter-btn {
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff!important;
+}
+
+.collection-img span {
+    top: 10px; /* Adjusted top position for mobile */
+    right: 10px; /* Adjusted right position for mobile */
+    width: 36px; /* Adjusted width for mobile */
+    height: 36px; /* Adjusted height for mobile */
+}
+
+/* Special */
+.special-img span {
+    top: 10px; /* Adjusted top position for mobile */
+    right: 10px; /* Adjusted right position for mobile */
+}
+
+.special-list .btn {
+    padding: 8px 15px!important; /* Adjusted padding for mobile */
+}
+
+.special-img img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Offers */
+#offers {
+    background: url(../images/offer_img.jpg) center/cover no-repeat;
+}
+
+#offers .row {
+    min-height: 40vh; /* Adjusted min-height for mobile */
+}
+
+.offers-content span {
+    font-size: 24px; /* Adjusted font size for mobile */
+}
+
+.offers-content h2 {
+    font-size: 40px; /* Adjusted font size for mobile */
+    font-family: var(--lg-font);
+}
+
+.offers-content .btn {
+    border-color: transparent!important;
+}
+
+/* About */
+#about {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 80%; /* Adjusted max-width for mobile */
+}
+
+#newsletter .input-group {
+    max-width: 80%; /* Adjusted max-width for mobile */
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink)!important;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Adjustments for tablets */
+    .carousel-inner h1 {
+        font-size: 50px; /* Adjusted font size for tablets */
+    }
+
+    .title h2::before {
+        height: 45px; /* Adjusted height for tablets */
+    }
+
+    #offers .row {
+        min-height: 50vh; /* Adjusted min-height for tablets */
+    }
+
+    .offers-content h2 {
+        font-size: 50px; /* Adjusted font size for tablets */
+    }
+
+    #newsletter p {
+        max-width: 70%; /* Adjusted max-width for tablets */
+    }
+
+    #newsletter .input-group {
+        max-width: 60%; /* Adjusted max-width for tablets */
+    }
+}
+
